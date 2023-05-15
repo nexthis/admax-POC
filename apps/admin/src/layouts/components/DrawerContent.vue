@@ -7,9 +7,7 @@ import logo from '@/assets/logo.svg?raw'
 
 const vuetifyTheme = useTheme()
 const upgradeBanner = computed(() => {
-  return vuetifyTheme.global.name.value === 'light'
-    ? upgradeBannerLight
-    : upgradeBannerDark
+  return vuetifyTheme.global.name.value === 'light' ? upgradeBannerLight : upgradeBannerDark
 })
 </script>
 
@@ -24,9 +22,7 @@ const upgradeBanner = computed(() => {
       <div v-html="logo" />
 
       <Transition name="vertical-nav-app-title">
-        <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">
-          Materio
-        </h1>
+        <h1 class="font-weight-semibold leading-normal text-xl text-uppercase">Materio</h1>
       </Transition>
     </RouterLink>
   </div>
@@ -40,6 +36,15 @@ const upgradeBanner = computed(() => {
         icon: { icon: 'mdi-home-outline' },
       }"
     />
+
+    <VerticalNavLink
+      :item="{
+        title: 'Users',
+        to: 'users',
+        icon: { icon: 'mdi-user-outline' },
+      }"
+    />
+
     <VerticalNavLink
       :item="{
         title: 'Account Settings',
@@ -128,7 +133,7 @@ const upgradeBanner = computed(() => {
       transition="scale-transition"
       class="upgrade-banner mx-auto"
       style="max-width: 230px"
-    >
+    />
   </a>
 </template>
 
