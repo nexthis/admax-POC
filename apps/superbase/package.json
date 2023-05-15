@@ -1,0 +1,7 @@
+{
+    "name": "superbase",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "cd ./docker && docker compose up"
+    }
+  }
