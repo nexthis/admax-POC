@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { VerticalNavLink, VerticalNavSectionTitle } from '@layouts'
-import { useTheme } from 'vuetify'
 import upgradeBannerDark from '@/assets/images/pro/upgrade-banner-dark.png'
 import upgradeBannerLight from '@/assets/images/pro/upgrade-banner-light.png'
 import logo from '@/assets/logo.svg?raw'
+import { VerticalNavLink, VerticalNavSectionTitle } from '@layouts'
+import { useTheme } from 'vuetify'
 
 const vuetifyTheme = useTheme()
 const upgradeBanner = computed(() => {
@@ -42,6 +42,14 @@ const upgradeBanner = computed(() => {
         title: 'Users',
         to: 'users',
         icon: { icon: 'mdi-user-outline' },
+      }"
+    />
+
+    <VerticalNavLink
+      :item="{
+        title: 'Article',
+        to: 'article/',
+        icon: { icon: 'mdi-newspaper-variant-outline' },
       }"
     />
 
@@ -120,21 +128,6 @@ const upgradeBanner = computed(() => {
       }"
     />
   </ul>
-
-  <!-- 👉 illustration -->
-  <a
-    href="https://themeselection.com/item/materio-vuetify-vuejs-admin-template"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      :src="upgradeBanner"
-      alt="upgrade-banner"
-      transition="scale-transition"
-      class="upgrade-banner mx-auto"
-      style="max-width: 230px"
-    />
-  </a>
 </template>
 
 <style lang="scss">

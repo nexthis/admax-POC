@@ -23,7 +23,7 @@
     },
     // Vue
     "[vue]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.defaultFormatter": "Vue.volar",
     },
     // Extension: Volar
     "volar.preview.port": 3000,
@@ -107,5 +107,11 @@
                 "borderStyle": "solid"
             }
         ]
-    }
+    },
+    "typescript.preferences.autoImportFileExcludePatterns": [
+        "vue-router"
+    ],
+    "html-css-class-completion.remoteStyleSheets": [
+        "https://cdn.jsdelivr.net/npm/vuetify@3.3.0/dist/vuetify.min.css"
+    ],
 }

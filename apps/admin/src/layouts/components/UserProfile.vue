@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import type { Anchor } from 'vuetify/lib/components'
-import avatar1 from '@/assets/images/avatars/avatar-1.png'
+import avatar1 from '@/assets/images/avatars/avatar-1.png';
+import { useAuthStore } from '@/stores/auth';
+import type { Anchor } from 'vuetify/lib/components';
+
+const router = useRouter()
+const {logout, user} = useAuthStore()
 
 const avatarBadgeProps = {
   dot: true,
@@ -10,6 +14,13 @@ const avatarBadgeProps = {
   color: 'success',
   bordered: true,
 }
+
+const handleLogout = async () => {
+  await logout()
+
+  router.push({ name: 'index' })
+}
+
 </script>
 
 <template>
@@ -111,7 +122,7 @@ const avatarBadgeProps = {
           <VDivider class="my-2" />
 
           <!-- 👉 Logout -->
-          <VListItem to="/login">
+          <VListItem @click="handleLogout">
             <template #prepend>
               <VIcon
                 class="me-2"

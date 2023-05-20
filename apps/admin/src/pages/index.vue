@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { supabase } from 'supabase'
 import AnalyticsAward from '@/views/dashboards/analytics/AnalyticsAward.vue'
 import AnalyticsBarCharts from '@/views/dashboards/analytics/AnalyticsBarCharts.vue'
 import AnalyticsDatatable from '@/views/dashboards/analytics/AnalyticsDatatable.vue'
@@ -31,80 +32,47 @@ const newProject = {
 
 <template>
   <VRow class="match-height">
-    <VCol
-      cols="12"
-      md="4"
-    >
+    <VCol cols="12" md="4">
       <AnalyticsAward />
     </VCol>
 
-    <VCol
-      cols="12"
-      md="8"
-    >
+    <VCol cols="12" md="8">
       <AnalyticsTransactions />
     </VCol>
 
-    <VCol
-      cols="12"
-      md="4"
-    >
+    <VCol cols="12" md="4">
       <AnalyticsWeeklyOverview />
     </VCol>
 
-    <VCol
-      cols="12"
-      md="4"
-    >
+    <VCol cols="12" md="4">
       <AnalyticsTotalEarning />
     </VCol>
 
-    <VCol
-      cols="12"
-      md="4"
-    >
+    <VCol cols="12" md="4">
       <VRow class="match-height">
-        <VCol
-          cols="12"
-          sm="6"
-        >
+        <VCol cols="12" sm="6">
           <AnalyticsTotalProfitLineCharts />
         </VCol>
 
-        <VCol
-          cols="12"
-          sm="6"
-        >
+        <VCol cols="12" sm="6">
           <CardStatisticsVertical v-bind="totalProfit" />
         </VCol>
 
-        <VCol
-          cols="12"
-          sm="6"
-        >
+        <VCol cols="12" sm="6">
           <CardStatisticsVertical v-bind="newProject" />
         </VCol>
 
-        <VCol
-          cols="12"
-          sm="6"
-        >
+        <VCol cols="12" sm="6">
           <AnalyticsBarCharts />
         </VCol>
       </VRow>
     </VCol>
 
-    <VCol
-      cols="12"
-      md="4"
-    >
+    <VCol cols="12" md="4">
       <AnalyticsSalesByCountries />
     </VCol>
 
-    <VCol
-      cols="12"
-      md="8"
-    >
+    <VCol cols="12" md="8">
       <AnalyticsDepositWithdraw />
     </VCol>
 

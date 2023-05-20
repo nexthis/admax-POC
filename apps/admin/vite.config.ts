@@ -3,32 +3,37 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import DefineOptions from 'unplugin-vue-define-options/vite'
+import { VueRouterAutoImports, getFileBasedRouteName } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
-import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import vuetify from 'vite-plugin-vuetify'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    VueRouter({
+      getRouteName: (routeNode) => {
+        const name = getFileBasedRouteName(routeNode).substring(1) 
+        return name ? name : "index" 
+      },
+    }),
     vue(),
     vueJsx(),
-
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
     vuetify({
       styles: {
         configFile: 'src/styles/variables/_vuetify.scss',
       },
     }),
-    Pages({}),
     Layouts(),
     Components({
-      dirs: ['src/@core/components'],
+      dirs: ['src/@core/components', 'src/@crud/components'],
       dts: true,
     }),
     AutoImport({
-      imports: ['vue', 'vue-router', '@vueuse/core', 'vue-i18n', 'pinia'],
+      imports: ['vue', '@vueuse/core', 'vue-i18n', 'pinia', VueRouterAutoImports],
       vueTemplate: true,
     }),
     DefineOptions(),
