@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { supabase } from 'supabase'
 import AnalyticsAward from '@/views/dashboards/analytics/AnalyticsAward.vue'
 import AnalyticsBarCharts from '@/views/dashboards/analytics/AnalyticsBarCharts.vue'
 import AnalyticsDatatable from '@/views/dashboards/analytics/AnalyticsDatatable.vue'

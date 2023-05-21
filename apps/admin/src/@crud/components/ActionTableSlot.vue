@@ -21,7 +21,7 @@ const route = useRoute();
 
         <DeleteButton :table="table" :id="id" />
 
-        <VBtn v-if="show" :href="show" target="_blank" size="small" variant="outlined" class="ml-2"
+        <VBtn v-if="show" :href="show" target="_blank" size="small" variant="outlined" class="ml-0 mt-1 ml-lg-2 mt-lg-0"
             icon="mdi-eye-outline" />
         <slot />
     </div>

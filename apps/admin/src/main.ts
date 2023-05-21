@@ -6,6 +6,7 @@ import { loadFonts } from '@/plugins/webfontloader'
 import router from '@/router'
 import '@/styles/styles.scss'
 import '@core/scss/index.scss'
+import '@vuepic/vue-datepicker/dist/main.css'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 
