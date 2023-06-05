@@ -19,12 +19,6 @@ importers:
 
   apps/admin:
     dependencies:
-      '@casl/ability':
-        specifier: ^6.5.0
-        version: 6.5.0
-      '@casl/vue':
-        specifier: ^2.2.1
-        version: 2.2.1(@casl/ability@6.5.0)(vue@3.3.2)
       '@editorjs/checklist':
         specifier: ^1.5.0
         version: 1.5.0
@@ -176,6 +170,9 @@ importers:
       '@iconify/types':
         specifier: ^2.0.0
         version: 2.0.0
+      '@iconify/utils':
+        specifier: ^2.1.5
+        version: 2.1.5
       '@iconify/vue':
         specifier: ^4.1.1
         version: 4.1.1(vue@3.3.2)
@@ -698,22 +695,6 @@ packages:
       '@babel/helper-string-parser': 7.21.5
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
-
-  /@casl/ability@6.5.0:
-    resolution: {integrity: sha512-3guc94ugr5ylZQIpJTLz0CDfwNi0mxKVECj1vJUPAvs+Lwunh/dcuUjwzc4MHM9D8JOYX0XUZMEPedpB3vIbOw==}
-    dependencies:
-      '@ucast/mongo2js': 1.3.4
-    dev: false
-
-  /@casl/vue@2.2.1(@casl/ability@6.5.0)(vue@3.3.2):
-    resolution: {integrity: sha512-1OeGhT4A7VBkEACacF2ZlHkPiFJvyFy9h2PhBnMoetFDojMHbrn3ZjKgL5zQ4wSIrTQo9KbbzG3f0uAei2GKCQ==}
-    peerDependencies:
-      '@casl/ability': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.1.0 || ^6.0.0
-      vue: ^3.0.0
-    dependencies:
-      '@casl/ability': 6.5.0
-      vue: 3.3.2
-    dev: false
 
   /@cloudflare/kv-asset-handler@0.3.0:
     resolution: {integrity: sha512-9CB/MKf/wdvbfkUdfrj+OkEwZ5b7rws0eogJ4293h+7b6KX5toPwym+VQKmILafNB9YiehqY0DlNrDcDhdWHSQ==}
@@ -2123,30 +2104,6 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.59.5
       eslint-visitor-keys: 3.4.1
-
-  /@ucast/core@1.10.2:
-    resolution: {integrity: sha512-ons5CwXZ/51wrUPfoduC+cO7AS1/wRb0ybpQJ9RrssossDxVy4t49QxWoWgfBDvVKsz9VXzBk9z0wqTdZ+Cq8g==}
-    dev: false
-
-  /@ucast/js@3.0.3:
-    resolution: {integrity: sha512-jBBqt57T5WagkAjqfCIIE5UYVdaXYgGkOFYv2+kjq2AVpZ2RIbwCo/TujJpDlwTVluUI+WpnRpoGU2tSGlEvFQ==}
-    dependencies:
-      '@ucast/core': 1.10.2
-    dev: false
-
-  /@ucast/mongo2js@1.3.4:
-    resolution: {integrity: sha512-ahazOr1HtelA5AC1KZ9x0UwPMqqimvfmtSm/PRRSeKKeE5G2SCqTgwiNzO7i9jS8zA3dzXpKVPpXMkcYLnyItA==}
-    dependencies:
-      '@ucast/core': 1.10.2
-      '@ucast/js': 3.0.3
-      '@ucast/mongo': 2.4.3
-    dev: false
-
-  /@ucast/mongo@2.4.3:
-    resolution: {integrity: sha512-XcI8LclrHWP83H+7H2anGCEeDq0n+12FU2mXCTz6/Tva9/9ddK/iacvvhCyW6cijAAOILmt0tWplRyRhVyZLsA==}
-    dependencies:
-      '@ucast/core': 1.10.2
-    dev: false
 
   /@unhead/dom@1.1.27:
     resolution: {integrity: sha512-sUrzpKIVvFp8TFx1mgp5t0k5ts1+KmgjMgRRuvRTZMBMVeGQRLSuL3uo34iwuFmKxeI6BXT5lVBk5H02c1XdGg==}
