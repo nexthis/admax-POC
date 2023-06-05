@@ -63,6 +63,7 @@
     "@fullcalendar/vue3": "^5.11.5",
     "@iconify-json/mdi": "^1.1.52",
     "@iconify/tools": "^3.0.2",
+    "@iconify/types": "^2.0.0",
     "@iconify/vue": "^4.1.1",
     "@intlify/vite-plugin-vue-i18n": "^5.0.1",
     "@types/node": "^20.1.4",

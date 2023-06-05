@@ -173,6 +173,9 @@ importers:
       '@iconify/tools':
         specifier: ^3.0.2
         version: 3.0.2
+      '@iconify/types':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@iconify/vue':
         specifier: ^4.1.1
         version: 4.1.1(vue@3.3.2)
