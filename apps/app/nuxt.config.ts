@@ -16,7 +16,7 @@ export default defineNuxtConfig({
             name: 'supabase', // optional value to overrider provider name
             provider: '~/providers/supabase', // Path to custom provider
             options: {
-                baseURL: 'http://localhost:8080/storage/v1/object/public/public/'
+                baseURL: process.env.SUPABASE_IMAGE || 'http://localhost:8080/storage/v1/object/public/public/'
             }
           }
         }
