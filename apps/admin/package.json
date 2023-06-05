@@ -1,5 +1,5 @@
 {
-  "name": "vue-project",
+  "name": "admin",
   "version": "0.0.0",
   "scripts": {
     "dev": "pnpm run build:icons && vite --host",
