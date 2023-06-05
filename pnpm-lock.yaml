@@ -286,7 +286,7 @@ importers:
         specifier: ^18
         version: 18.7.18
       nuxt:
-        specifier: ^3.5.2
+        specifier: ^3.4.3
         version: 3.5.2(@types/node@18.7.18)(eslint@7.32.0)(sass@1.62.1)
       sass:
         specifier: ^1.62.1
