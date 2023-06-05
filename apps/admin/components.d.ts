@@ -10,13 +10,20 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ActionTableSlot: typeof import('./src/@crud/components/ActionTableSlot.vue')['default']
+    AdvanceTextEditor: typeof import('./src/components/AdvanceTextEditor.vue')['default']
     CardStatisticsVertical: typeof import('./src/@core/components/CardStatisticsVertical.vue')['default']
+    CategorySelect: typeof import('./src/components/CategorySelect.vue')['default']
     DataTable: typeof import('./src/@crud/components/DataTable.vue')['default']
     ErrorHeader: typeof import('./src/@core/components/ErrorHeader.vue')['default']
+    ImageUpload: typeof import('./src/components/ImageUpload.vue')['default']
+    ImageUplouder: typeof import('./src/components/ImageUplouder.vue')['default']
     PrimaryTable: typeof import('./src/@crud/components/PrimaryTable.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchBar: typeof import('./src/@crud/internal/SearchBar.vue')['default']
+    SeoEditor: typeof import('./src/components/SeoEditor.vue')['default']
+    SlugInput: typeof import('./src/components/SlugInput.vue')['default']
+    TagsSelect: typeof import('./src/components/TagsSelect.vue')['default']
     ThemeSwitcher: typeof import('./src/@core/components/ThemeSwitcher.vue')['default']
   }
 }

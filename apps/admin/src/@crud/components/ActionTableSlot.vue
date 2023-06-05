@@ -17,7 +17,7 @@ const route = useRoute();
 
 <template>
     <div>
-        <VBtn size="small" variant="outlined" :to="`${route.name}2`" icon="mdi-archive-edit-outline" />
+        <VBtn size="small" variant="outlined" :to="`${route.name}${id}`" icon="mdi-archive-edit-outline" />
 
         <DeleteButton :table="table" :id="id" />
 

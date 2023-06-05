@@ -1,8 +1,0 @@
-{
-    "[vue]": {
-        "editor.defaultFormatter": "Vue.volar"
-      },
-      "[html]": {
-        "editor.defaultFormatter": "Vue.volar"
-      },
-}

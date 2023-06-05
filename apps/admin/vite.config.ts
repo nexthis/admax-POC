@@ -29,7 +29,7 @@ export default defineConfig({
     }),
     Layouts(),
     Components({
-      dirs: ['src/@core/components', 'src/@crud/components'],
+      dirs: ['src/@core/components', 'src/@crud/components', 'src//components'],
       dts: true,
     }),
     AutoImport({

@@ -6,6 +6,10 @@ export const isEmpty = (value: unknown): boolean => {
   return !!(Array.isArray(value) && value.length === 0)
 }
 
+export function isEmptyOrSpaces(str: string) {
+  return str === null || str.match(/^ *$/) !== null;
+}
+
 // 👉 IsNullOrUndefined
 export const isNullOrUndefined = (value: unknown): value is undefined | null => {
   return value === null || value === undefined

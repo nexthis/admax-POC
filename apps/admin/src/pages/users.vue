@@ -7,7 +7,7 @@ const headers = [
 </script>
 
 <template>
-    <data-table table="user" :headers="headers" label="Users">
+    <data-table table="users" :headers="headers" label="Users">
         <template #actions="{ item }">
             <ActionTableSlot table="article" :id="item.id" />
         </template>

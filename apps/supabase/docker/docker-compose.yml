@@ -115,7 +115,7 @@ services:
 
   rest:
     container_name: supabase-rest
-    image: postgrest/postgrest:v10.1.2
+    image: postgrest/postgrest:v11.0.1
     depends_on:
       db:
         # Disable this if you are using an external Postgres database
@@ -162,7 +162,7 @@ services:
 
   storage:
     container_name: supabase-storage
-    image: supabase/storage-api:v0.37.10
+    image: supabase/storage-api:v0.39.0
     depends_on:
       db:
         # Disable this if you are using an external Postgres database

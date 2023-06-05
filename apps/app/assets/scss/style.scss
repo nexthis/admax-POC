@@ -1,0 +1,37 @@
+// ================================== //
+// Fonts
+// ================================== //
+
+// ================================== //
+// Required Files
+// ================================== //
+@import "variables";
+@import 'vuetify/styles';
+
+// ================================== //
+// Vuetify overrides
+// ================================== //
+@import "components/overrides.scss";
+
+// ================================== //
+// Template Common Components
+// ================================== //
+@import "template/header";
+@import "template/footer";
+@import "template/navigation";
+@import "template/animation";
+@import "template/transition";
+// ================================== //
+// Sections
+// ================================== //
+@import "template/section/banner";
+@import "template/section/coming";
+@import "template/section/ui";
+@import "template/section/section-header";
+@import "template/section/features";
+@import "template/section/portfolio";
+@import "template/section/pricing";
+@import "template/section/team";
+@import "template/section/blog";
+@import "template/section/contact";
+
