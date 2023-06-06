@@ -239,6 +239,9 @@ importers:
       type-fest:
         specifier: ^2.19.0
         version: 2.19.0
+      types:
+        specifier: workspace:^
+        version: link:../../packages/types
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
@@ -288,6 +291,9 @@ importers:
       sass:
         specifier: ^1.62.1
         version: 1.62.1
+      types:
+        specifier: workspace:^
+        version: link:../../packages/types
 
   apps/supabase: {}
 
@@ -305,6 +311,12 @@ importers:
       eslint-plugin-react:
         specifier: 7.28.0
         version: 7.28.0(eslint@8.40.0)
+
+  packages/types:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
 
 packages:
 
