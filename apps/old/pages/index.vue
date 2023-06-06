@@ -4,7 +4,8 @@
 
 <template>
   <div>
-    <ViewsPortfolio />
-    <ViewsBannerWork />
+    <!-- <ViewsPortfolio />
+    <ViewsBannerWork /> -->
+    XDD
   </div>
 </template>

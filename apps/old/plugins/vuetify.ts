@@ -53,17 +53,17 @@ const Lighttheme: ThemeDefinition = {
 };
 export default defineNuxtPlugin((nuxtApp) => {
   // Doing something with nuxtApp
-  const vuetify = createVuetify({
-    ssr: true,
-    components,
-    directives,
-    theme: {
-      themes: {
-        light: Lighttheme,
-        variables: {},
-      },
-    },
-  });
-  nuxtApp.vueApp.use(vuetify);
+  // const vuetify = createVuetify({
+  //   ssr: true,
+  //   components,
+  //   directives,
+  //   theme: {
+  //     themes: {
+  //       light: Lighttheme,
+  //       variables: {},
+  //     },
+  //   },
+  // });
+  // nuxtApp.vueApp.use(vuetify);
 //   nuxtApp.vueApp.use(VueTablerIcons);
 });
