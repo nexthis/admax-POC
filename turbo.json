@@ -6,6 +6,10 @@
       "dependsOn": ["^build"],
       "outputs": [".output/**", ".dist/**", ".vercel/**"]
     },
+    "app#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".output/**"]
+    },
     "lint": {},
     "dev": {
       "cache": false,
